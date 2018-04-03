@@ -1,0 +1,26 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+svg {
+    border: 2px black solid;
+}
+
+.path {
+    stroke: #000;
+    fill: #fff;
+    stroke-width: 1px;
+    stroke-dasharray: 10000px;
+    stroke-dashoffset: 10000px;
+    animation-name: draw;
+    animation-duration: 10s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+}
+
+@keyframes draw {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
