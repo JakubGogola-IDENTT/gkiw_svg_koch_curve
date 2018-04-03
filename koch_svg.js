@@ -58,9 +58,6 @@ var draw = function (level, length) {
         turnRight(120);
     }
     attribute += "Z";
-
-    console.log(attribute);
-
     var shape = document.createElementNS(svgns, "path");
     shape.setAttributeNS(null, "d", attribute);
     shape.setAttributeNS(null, "class", "path");
